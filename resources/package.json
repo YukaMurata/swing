@@ -1,0 +1,29 @@
+{
+  "name": "swing",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.4",
+    "eslint": "^5.3.0",
+    "eslint-loader": "^2.1.0",
+    "prettier": "^1.14.2",
+    "uglify-save-license": "^0.4.1",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.5",
+    "fs": "0.0.1-security",
+    "natives": "^1.1.6",
+    "velocity-animate": "^1.5.2"
+  }
+}
