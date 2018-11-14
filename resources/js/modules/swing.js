@@ -13,7 +13,7 @@ export default class swing{
       this.accelerationY = event.acceleration.y;
       this.accelerationZ = event.acceleration.z;
 
-      if(this.accelerationX > 10 || this.accelerationY>10 || this.accelerationZ){
+      if(this.accelerationX > 10 || this.accelerationY>10 || this.accelerationZ>10){
         this.isSwing++;
       }
       if(this.isSwing >= 13){
