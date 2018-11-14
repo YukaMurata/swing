@@ -36,8 +36,14 @@ var swing = function () {
     this.accelerationY = null;
     this.accelerationZ = null;
     this.isSwing = 0;
+    this.isAlert = false;
     this.addEvent();
   }
+
+  /**
+   * イベントまとめたもの
+   */
+
 
   _createClass(swing, [{
     key: 'addEvent',
@@ -52,15 +58,21 @@ var swing = function () {
         if (_this.accelerationX > 10 || _this.accelerationY > 10 || _this.accelerationZ > 10) {
           _this.isSwing++;
         }
-        if (_this.isSwing >= 20) {
+        if (_this.isSwing >= 20 && !_this.isAlert) {
           _this.showAlert();
         }
       });
     }
+
+    /**
+     * アラートを表示する
+     */
+
   }, {
     key: 'showAlert',
     value: function showAlert() {
       alert(this.accelerationX + ',' + this.accelerationY + ',' + this.accelerationZ + ',' + this.isSwing);
+      this.isAlert = true;
     }
   }]);
 
