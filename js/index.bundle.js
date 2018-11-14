@@ -49,10 +49,10 @@ var swing = function () {
         _this.accelerationY = event.acceleration.y;
         _this.accelerationZ = event.acceleration.z;
 
-        if (_this.accelerationX > 100 || _this.accelerationY > 100 || _this.accelerationZ > 100) {
+        if (_this.accelerationX > 10 || _this.accelerationY > 10 || _this.accelerationZ > 10) {
           _this.isSwing++;
         }
-        if (_this.isSwing >= 13) {
+        if (_this.isSwing >= 20) {
           _this.showAlert();
         }
       });
