@@ -52,7 +52,7 @@ var swing = function () {
         if (_this.accelerationX > 10 || _this.accelerationY > 10 || _this.accelerationZ) {
           _this.isSwing++;
         }
-        if (_this.isSwing >= 3) {
+        if (_this.isSwing >= 13) {
           _this.showAlert();
         }
       });
@@ -60,7 +60,7 @@ var swing = function () {
   }, {
     key: 'showAlert',
     value: function showAlert() {
-      alert('swing!!');
+      alert(this.accelerationX + ',' + this.accelerationY + ',' + this.accelerationZ + ',' + this.isSwing);
     }
   }]);
 

@@ -16,13 +16,13 @@ export default class swing{
       if(this.accelerationX > 10 || this.accelerationY>10 || this.accelerationZ){
         this.isSwing++;
       }
-      if(this.isSwing >= 3){
+      if(this.isSwing >= 13){
         this.showAlert();
       }
     });
   }
 
   showAlert(){
-    alert('swing!!');
+    alert(`${this.accelerationX},${this.accelerationY},${this.accelerationZ},${this.isSwing}`);
   }
 }
